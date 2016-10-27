@@ -1,6 +1,6 @@
 # nds-laravel-elixir-tasks
 
-This Laravel Elixir 6 extension brings support for severial usefull tasks.
+This Laravel Elixir 6 extension brings support for several useful tasks.
 
 ## Install
 
