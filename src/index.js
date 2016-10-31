@@ -11,6 +11,7 @@ import JSHintTask from './Tasks/JSHintTask';
  */
 
 Elixir.extend('jshint', (src, options) => {
+    let assetsJsFolder = Elixir.config.get('assets.js.folder');
     src = src || [`${assetsJsFolder}/**/*.js`, `!${assetsJsFolder}/vendor/**/*.js`];
 
     new JSHintTask('jshint', src, options);
