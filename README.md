@@ -22,11 +22,20 @@ Elixir(mix => {
 ## Tasks
 ### JSHint
 ```js
-mix.jshint(); // Laravel´s default js assets folder
+mix.jshint(); // Laravel's default js assets folder
 ```
 or
 ```js
-mix.jshint(src);
+mix.jshint(src, options);
+```
+
+### Imagemin
+```js
+mix.imagemin(); // Laravel's default images assets folder
+```
+or
+```js
+mix.imagemin(src, output, options);
 ```
 
 ## License

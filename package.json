@@ -8,7 +8,8 @@
         "laravel",
         "elixir",
         "tasks",
-        "jshint"
+        "jshint",
+        "imagemin"
     ],
     "main": "dist/index.js",
     "homepage": "https://github.com/new-data-services/nds-laravel-elixir-tasks",
@@ -21,7 +22,8 @@
     },
     "dependencies": {
         "jshint": "^2.9",
-        "gulp-jshint": "^2.0"
+        "gulp-jshint": "^2.0",
+        "gulp-imagemin": "^3.1"
     },
     "devDependencies": {
         "babel-cli": "^6.18",

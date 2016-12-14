@@ -1,4 +1,5 @@
-import JSHintTask from './Tasks/JSHintTask';
+import JSHintTask   from './Tasks/JSHintTask';
+import ImageminTask from './Tasks/ImageminTask';
 
 /*
  |----------------------------------------------------------------
@@ -7,12 +8,23 @@ import JSHintTask from './Tasks/JSHintTask';
  |
  | These tasks will allow you to use:
  | - JSHint
+ | - Imagemin
  |
  */
 
 Elixir.extend('jshint', (src, options) => {
-    let assetsJsFolder = Elixir.config.get('assets.js.folder');
-    src = src || [`${assetsJsFolder}/**/*.js`, `!${assetsJsFolder}/vendor/**/*.js`];
+    let assetsJsPath = Elixir.config.get('assets.js.folder');
+    src = src || [`${assetsJsPath}/**/*.js`, `!${assetsJsPath}/vendor/**/*.js`];
 
     new JSHintTask('jshint', src, options);
+});
+
+Elixir.extend('imagemin', (src, output, options) => {
+    let assetsPath = Elixir.config.get('assets.assetsPath');
+    let publicPath = Elixir.config.get('assets.publicPath');
+
+    src = src || `${assetsPath}/images/*.js`;
+    output = output || `${publicPath}/images/app`;
+
+    new ImageminTask('imagemin', src, output, options);
 });

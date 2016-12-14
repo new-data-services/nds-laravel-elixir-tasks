@@ -5,7 +5,7 @@ class JSHintTask extends Elixir.Task {
      * Constructor
      *
      * @param  {string}       name
-     * @param  {string|array} paths
+     * @param  {string|array} src
      * @param  {object|null}  options
      */
     constructor(name, src, options = {}) {
