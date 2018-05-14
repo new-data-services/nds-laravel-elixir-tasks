@@ -1,5 +1,7 @@
 # nds-laravel-elixir-tasks
 
+## WARNING: This package is deprecated. Use [Laravel Mix](https://laravel.com/docs/master/mix) instead.
+
 This Laravel Elixir 6 extension brings support for several useful tasks.
 
 ## Install
